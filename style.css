@@ -1,0 +1,208 @@
+    /*CSS Reset*/
+    
+    *{
+        margin: 0px;;
+        padding: 0px;    
+    
+    }
+
+    /*CSS Variables*/
+    :root{
+        --navbar-height: 59px;
+    }
+
+    /*Navigation Bar*/
+    #bar{
+        display:flex;
+        align-items: center;
+        top: 0px;
+
+    }
+    #bar::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.9;
+        top: 0px;
+        left: 0px;
+     }
+    /* Navigation Bar: logo and img*/
+    #logo{
+           margin: 4px 4px;
+    }
+    #logo img{
+        height: 126px;
+        margin: 4px 0px;
+    }
+   
+ 
+    /* Navigation Bar: List styling*/
+    #bar{
+     position: sticky;
+    }
+    #bar ul{
+        display: flex;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+   
+    #bar ul li{
+       list-style: none;
+       font-size: 1.3rem;
+     }
+    #bar ul li a{
+        color: white;
+        display: block;
+        padding: 3px 20px;
+        border-radius: 20px;
+        text-decoration:none ;
+    }
+    #bar ul li a:hover{
+        color:black;
+        background-color:white;
+    }
+    /*Home Section*/
+    #home{
+        display: flex;
+        flex-direction: column;
+        padding:3px 200px;
+        justify-content: center;
+        align-items: center;
+        height: 930px;
+    }
+    /*ctrl alt shift down   and down till we want for multi cursor*/
+    #home::before{
+        content: "";
+        position: absolute;
+        background:url('../IMG_20230101_120838_074.jpg') no-repeat center center/cover;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.9;
+       
+        
+    }
+    #home h1{
+        text-align: center; 
+        color:crimson;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    #home p{
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 1 rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 1000;
+        
+    }
+    /*Section services*/
+    #services{
+        margin: 34px;
+        display: flex;
+    }
+    #services .box{
+        border: 2px solid brown;
+        border:2px solid brown;
+        padding: 16px;
+        margin: -43px 3px;
+    
+        border-radius:28px;
+        background: #f2f2f2;
+    }
+    #services .box img{
+        height: 300px;
+        margin: auto;
+        display: block;
+    }
+    /*Client Section*/
+    #client-section{
+        height: 344px;
+        padding: 0px;
+        position: relative;
+    }
+    #clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #clients img{
+       padding-top: 0%;
+        height: 260px;
+        padding: 10px;
+        width: 1870px;
+
+    }
+   /*Contact Section*/
+    #contact{
+        position: relative;
+    }
+    #contact::before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        padding: auto;
+        opacity: 0.7;
+        background: url('../wallpaperflare.com_wallpaper.jpg')  no-repeat center center/cover; 
+     }
+     #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+     }
+     #contact-box input,
+     #contact-box textarea{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1.1rem;
+     }
+     #contact-box form{
+        width: 40%;
+
+     }
+     #contact-box label{
+        font-size: 1.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        
+     }
+
+
+     footer{
+        background: black;
+        color: white;
+        padding: 9px 20px;
+     }
+    /*Utility Class*/
+    .h-primary{
+        font-size: 3.8rem;
+        padding: 2px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h-secondary{
+        font-size: 2.8rem;
+        padding: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    .btn{
+        margin: 17px;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        cursor:pointer ;
+        padding: 6px 20px;
+        border: 2x solid white;
+        background-color:black;
+        color:orangered
+        
+        }
+        .center{
+            text-align: center;
+        }
+     
